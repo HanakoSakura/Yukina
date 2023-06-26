@@ -1,4 +1,5 @@
 
+import matplotlib.pyplot as plt
 import sc
 
 def osc()->list[int]:
@@ -9,6 +10,9 @@ def osc()->list[int]:
         if len(text)>0:
             if text[0] == 'exit':
                 break
+            if text[0] == 'show':
+                plt.plot(range(64),tmp)
+                plt.show()
             if len(text)>1:
                 s = text[1:]
                 d = int(text[0])
@@ -22,6 +26,6 @@ def osc()->list[int]:
         pass
     return tmp
 
-
+osc()
                 
                 
