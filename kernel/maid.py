@@ -1,5 +1,5 @@
 
-import CurseLib
+from . import CurseLib
 
 def maid(w:list[int],ctrl:dict)->list[int]:
     tmp = w
