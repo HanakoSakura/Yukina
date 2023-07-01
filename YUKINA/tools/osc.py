@@ -1,6 +1,6 @@
 
 import matplotlib.pyplot as plt
-import sc
+from . import sc
 
 def osc()->list[int]:
     tmp = [0]
@@ -25,7 +25,5 @@ def osc()->list[int]:
             pass
         pass
     return tmp
-
-osc()
-                
+     
                 

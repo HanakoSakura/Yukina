@@ -9,20 +9,14 @@ However, Python can be used to directly call functions for sound synthesis.
 Here is a sample.
 
 ``` python
+import YUKINA
 
-import kernel.convert
-import kernel.maid
+voice = [30000]*32 + [-30000]*32
 
-voice = [32760]*32
-voice += [0]*32
+track = []
+track += YUKINA.kernel.maid(voice,{'size':64000})
 
-note = kernel.maid.maid(voice,{'size':64000})
+bytestrack = YUKINA.kernel.convert.convert(track)
 
-bytestrack = kernel.convert.convert(note)
-
-outfile='test.wav'
-
-kernel.convert.output(bytestrack,outfile)
-
+YUKINA.kernel.convert.output(bytestrack,'test.wav')
 ```
-
