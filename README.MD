@@ -1,10 +1,10 @@
-# YUKINA / ゆきな
+# YUKINA / ゆきな ( Alpha 1.0 )
 
 Sound synthesis.
 
-Sorry, the two main scripts have not been written yet.
+---
 
-However, Python can be used to directly call functions for sound synthesis.
+Python can be used to directly call functions for sound synthesis.
 
 Here is a sample.
 
