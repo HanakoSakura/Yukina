@@ -59,5 +59,5 @@ def envelope(w:list[float],env:list[float])->list[float]:
     tmp = []
     block = len(w)//len(env)
     for i in range(len(w)):
-        tmp.append( w[i] * env[i//block] )
+        tmp.append( w[i] * env[int(i/block)] )
     return tmp
