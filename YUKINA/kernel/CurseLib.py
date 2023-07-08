@@ -17,12 +17,10 @@ def resampling(w:list[int], step:float)->int:
     return int(s)
 
 def vol(w:list[int], power:float):
-    i = 0
-    while  i < len(w):
-        w[i] = int(w[i]*power)
-        i+=1
-        pass
-    return w
+    tmp = []
+    for sample in w:
+        tmp.append(sample*power)
+    return tmp
 
 def freq(w:list[int], step:float)->list[int]:
     if step<=0.0 or step == 1.0 or len(w)==0 :
@@ -57,3 +55,9 @@ def OLA(w:list[int],power:float,cut_size:int)->list[int]:
         ret+=w[offset:len(w)]
     return ret
 
+def envelope(w:list[float],env:list[float])->list[float]:
+    tmp = []
+    block = len(w)//len(env)
+    for i in range(len(w)):
+        tmp.append( w[i] * env[i//block] )
+    return tmp
