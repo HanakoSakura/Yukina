@@ -1,6 +1,6 @@
 # encoding="utf-8"
 
-from math import sin,pi
+from math import sin,pi,floor
 
 def sinc(x:float)->float:
     if x == 0.0 :
@@ -31,6 +31,21 @@ def freq(w:list[int], step:float)->list[int]:
         tmp.append(resampling(w,offset))
         offset+=step
         pass
+    return tmp
+
+def freq_line(w:list[int], step:float)->list[int]:
+    if step<=0.0 or step == 1.0 or len(w)==0 :
+        return w
+    tmp = []
+    offset = 0.0
+    k=b=x=0
+    while offset < len(w):
+        b = w[floor(offset)]
+        k = w[floor(offset)] - b
+        x = offset - floor(offset)
+        tmp.append(k*x+b)
+        offset+=step
+    
     return tmp
 
 def repeat(w:list[int],new_size:int)->list[int]:
