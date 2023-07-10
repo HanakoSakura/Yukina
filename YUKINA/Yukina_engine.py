@@ -49,10 +49,11 @@ def synthesis(score:dict)->list[int]:
         
         i+=1
         p = int(i/len(useScore)*20)
-        print('Synthesis',end=' |')
+        print('\rSynthesis',end=' |')
         print('#'*p,end='')
-        print(' '*(20-p),end='|   \r')
+        print(' '*(20-p),end='|   ')
         
+    print('')
     return track
         
         
