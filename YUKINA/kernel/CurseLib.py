@@ -19,7 +19,7 @@ def resampling(w:list[int], step:float)->int:
 def vol(w:list[int], power:float):
     tmp = []
     for sample in w:
-        tmp.append(sample*power)
+        tmp.append(int(sample*power))
     return tmp
 
 def freq(w:list[int], step:float)->list[int]:

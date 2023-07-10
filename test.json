@@ -1,0 +1,71 @@
+{
+    "use voice":"SquartWave",
+    "score":[
+    {"beat":30,"pitch":"A5"},
+
+    {"beat":15,"pitch":"#F4"},
+    {"beat":15,"pitch":"G4"},
+    {"beat":30,"pitch":"A5"},
+    
+    {"beat":15,"pitch":"#F4"},
+    {"beat":15,"pitch":"G4"},
+
+    {"beat":15,"pitch":"A5"},
+    {"beat":15,"pitch":"A4"},
+    {"beat":15,"pitch":"B4"},
+    {"beat":15,"pitch":"#C4"},
+    {"beat":15,"pitch":"D4"},
+    {"beat":15,"pitch":"E4"},
+    {"beat":15,"pitch":"#F4"},
+    {"beat":15,"pitch":"G4"},
+    {"beat":30,"pitch":"#F4"},
+
+    {"beat":15,"pitch":"D4"},
+    {"beat":15,"pitch":"E4"},
+    {"beat":30,"pitch":"#F4"},
+
+    {"beat":15,"pitch":"#F3"},
+    {"beat":15,"pitch":"G3"},
+    {"beat":15,"pitch":"A4"},
+    {"beat":15,"pitch":"B4"},
+    {"beat":15,"pitch":"A4"},
+    {"beat":15,"pitch":"G3"},
+    {"beat":15,"pitch":"A4"},
+    {"beat":15,"pitch":"#F3"},
+    {"beat":15,"pitch":"G3"},
+    {"beat":15,"pitch":"A4"},
+    {"beat":30,"pitch":"G3"},
+
+    {"beat":15,"pitch":"B4"},
+    {"beat":15,"pitch":"A4"},
+    {"beat":30,"pitch":"G3"},
+
+    {"beat":15,"pitch":"#F3"},
+    {"beat":15,"pitch":"E3"},
+    {"beat":15,"pitch":"#F3"},
+    {"beat":15,"pitch":"E3"},
+    {"beat":15,"pitch":"D3"},
+    {"beat":15,"pitch":"E3"},
+    {"beat":15,"pitch":"#F3"},
+    {"beat":15,"pitch":"G3"},
+    {"beat":15,"pitch":"A4"},
+    {"beat":15,"pitch":"B4"},
+    
+    {"beat":30,"pitch":"G3"},
+    {"beat":15,"pitch":"B4"},
+    {"beat":15,"pitch":"A4"},
+    {"beat":30,"pitch":"B4"},
+
+    {"beat":15,"pitch":"#C4"},
+    {"beat":15,"pitch":"D4"},
+    {"beat":15,"pitch":"A4"},
+    {"beat":15,"pitch":"B4"},
+    {"beat":15,"pitch":"#C4"},
+    {"beat":15,"pitch":"D4"},
+    {"beat":15,"pitch":"E4"},
+    {"beat":15,"pitch":"#F4"},
+    {"beat":15,"pitch":"G4"},
+    {"beat":15,"pitch":"A5"}
+
+
+]}

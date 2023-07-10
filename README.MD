@@ -1,4 +1,4 @@
-# YUKINA / ゆきな ( Alpha 1.0 )
+# YUKINA / ゆきな ( Alpha 1.1 )
 
 Sound synthesis.
 
