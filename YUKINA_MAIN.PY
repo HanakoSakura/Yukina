@@ -9,7 +9,7 @@ with open('test.json') as f:
 track = []
 bytestrack = b''
 
-voice = [30000]*32 + [-30000]*32
+
 track = YUKINA.Yukina_engine.synthesis(score=score)
 bytestrack = YUKINA.kernel.convert.convert(track)
 
