@@ -33,17 +33,19 @@ def freq(w:list[int], step:float)->list[int]:
         pass
     return tmp
 
-def freq_line(w:list[int], step:float)->list[int]:
-    if step<=0.0 or step == 1.0 or len(w)==0 :
-        return w
+def freq_line(w1:list[int], step:float)->list[int]:
+    if step<=0.0 or step == 1.0 or len(w1)==0 :
+        return w1
+    w = w1
+    w += [0]
     tmp = []
     offset = 0.0
     k=b=x=0
-    while offset < len(w):
+    while offset+1 < len(w):
         b = w[floor(offset)]
-        k = w[floor(offset)] - b
+        k = w[floor(offset)+1] - b
         x = offset - floor(offset)
-        tmp.append(k*x+b)
+        tmp.append(int(k*x+b))
         offset+=step
     
     return tmp
