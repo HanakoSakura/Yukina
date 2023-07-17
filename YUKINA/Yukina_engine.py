@@ -1,7 +1,6 @@
 # encoding="utf-8"
 
 from . import kernel,pitch,voice
-import matplotlib.pyplot as plt
 
 def synthesis(score:dict)->list[int]:
     '''YUKINA Synthesis Main Curse'''
