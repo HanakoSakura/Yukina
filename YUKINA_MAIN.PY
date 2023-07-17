@@ -32,7 +32,10 @@ try:
 
     if not '--noplay' in sys.argv:
         winsound.PlaySound(file+'.wav',winsound.SND_FILENAME)
+    
+    input('Press Enter to exit.')
 
 except Exception:
     tb = traceback.format_exc()
     print('Something error.\n',tb)
+    input('Press Enter to exit.')
