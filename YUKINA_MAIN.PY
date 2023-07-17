@@ -2,6 +2,12 @@ import YUKINA
 import json
 import winsound
 
+voice = {}
+with open('voice.json') as f:
+    voice = json.load(f)
+
+YUKINA.voice.VOICE = { **YUKINA.voice.VOICE , **voice }
+
 file = input('>')
 
 with open(file+'.json') as f:

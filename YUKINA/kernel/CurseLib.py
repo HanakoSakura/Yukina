@@ -90,3 +90,4 @@ def mix(w1:list[float],w2:list[float])->list[float]:
     for i in range(len(w1)):
         tmp.append(w1[i]+w2[i])
     return tmp
+
