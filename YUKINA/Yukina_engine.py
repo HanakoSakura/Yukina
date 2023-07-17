@@ -22,7 +22,7 @@ def synthesis(score:dict)->list[int]:
     p = int(i/len(useScore)*100)
     print('\rSynthesis',end=' |')
     print('#'*p,end='')
-    print(' '*(100-p)+'|',len(useScore)-i,end='   ')
+    print(' '*(100-p)+'|',i,'/',len(useScore),end='   ')
     
     for note in useScore:
         # Get note parameters
@@ -61,7 +61,7 @@ def synthesis(score:dict)->list[int]:
         p = int(i/len(useScore)*100)
         print('\rSynthesis',end=' |')
         print('#'*p,end='')
-        print('_'*(100-p)+'|',len(useScore)-i,end='   ')
+        print('_'*(100-p)+'|',i,'/',len(useScore),end='   ')
         
     print('')
     return track
