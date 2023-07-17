@@ -1,6 +1,7 @@
 import YUKINA
 import json
 import winsound
+import sys
 
 voice = {}
 with open('voice.json') as f:
@@ -8,7 +9,10 @@ with open('voice.json') as f:
 
 YUKINA.voice.VOICE = { **YUKINA.voice.VOICE , **voice }
 
-file = input('>')
+if len(sys.argv)>=3 and sys.argv[1]=='--input' :
+    file = sys.argv[2]
+else:
+    file = input('>')
 
 with open(file+'.json') as f:
     score = json.load(fp=f)
@@ -22,4 +26,5 @@ bytestrack = YUKINA.kernel.convert.convert(track)
 
 YUKINA.kernel.convert.output(bytestrack,file+'.wav')
 
-winsound.PlaySound(file+'.wav',winsound.SND_FILENAME)
+if not '--noplay' in sys.argv:
+    winsound.PlaySound(file+'.wav',winsound.SND_FILENAME)
