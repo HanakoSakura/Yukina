@@ -71,23 +71,3 @@ def OLA(w:list[int],power:float,cut_size:int)->list[int]:
     if offset<len(w):
         ret+=w[offset:len(w)]
     return ret
-
-def envelope(w:list[float],env:list[float])->list[float]:
-    tmp = []
-    block = len(w)//len(env)
-    for i in range(len(w)):
-        tmp.append( w[i] * env[int(i/block)] )
-    return tmp
-
-def ENVELOP_COMPLATE(w1:list[float],w2:list[float])->list[float]:
-    tmp=[]
-    for i in range(len(w1)):
-        tmp.append(w1[i]*w2[i])
-    return tmp
-
-def mix(w1:list[float],w2:list[float])->list[float]:
-    tmp=[]
-    for i in range(len(w1)):
-        tmp.append(w1[i]+w2[i])
-    return tmp
-
