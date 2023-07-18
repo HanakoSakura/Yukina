@@ -4,7 +4,6 @@ try:
 
     import YUKINA
     import json
-    import winsound
     import sys
 
     voice = {}
@@ -31,6 +30,7 @@ try:
     YUKINA.kernel.convert.output(bytestrack,file+'.wav')
 
     if not '--noplay' in sys.argv:
+        import winsound
         winsound.PlaySound(file+'.wav',winsound.SND_FILENAME)
     
     input('Press Enter to exit.')
