@@ -4,6 +4,8 @@ Sound synthesis.
 
 The most important project of かりなさくら.
 
+Based on sound stitching.
+
 Sample:
 
 ```
